@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Ulang Tahun untuk Pasangan Tersayang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #fff5f7;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(to right, #ffb6c1, #ffccd5);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 20px rgba(255, 182, 193, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            color: #b03a5b;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            color: #7a2c4a;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .heart {
+            color: #ff4d6d;
+            display: inline-block;
+            animation: heartbeat 1.2s infinite;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Carousel */
+        .carousel-container {
+            background-color: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+        
+        .carousel-title {
+            text-align: center;
+            color: #b03a5b;
+            margin-bottom: 30px;
+            font-size: 2.2rem;
+        }
+        
+        .carousel {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .carousel-item {
+            min-width: 100%;
+            position: relative;
+        }
+        
+        .carousel-item img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .carousel-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(176, 58, 91, 0.8));
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .carousel-caption h3 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+            padding: 0 15px;
+        }
+        
+        .carousel-btn {
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            color: #b03a5b;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .carousel-btn:hover {
+            background-color: white;
+            transform: scale(1.1);
+        }
+        
+        .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ffccd5;
+            margin: 0 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .indicator.active {
+            background-color: #b03a5b;
+        }
+        
+        /* Birthday Message */
+        .message-container {
+            background-color: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+        
+        .message-title {
+            text-align: center;
+            color: #b03a5b;
+            margin-bottom: 30px;
+            font-size: 2.2rem;
+        }
+        
+        .message-content {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .message-content p {
+            margin-bottom: 20px;
+        }
+        
+        .signature {
+            text-align: right;
+            margin-top: 40px;
+            font-style: italic;
+            color: #b03a5b;
+            font-size: 1.3rem;
+        }
+        
+        /* Music Player */
+        .music-container {
+            background-color: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+        
+        .music-title {
+            color: #b03a5b;
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+        }
+        
+        .music-player {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .music-info {
+            flex: 1;
+            text-align: left;
+        }
+        
+        .music-controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .music-btn {
+            background-color: #ffb6c1;
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            color: #b03a5b;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .music-btn:hover {
+            background-color: #ffccd5;
+            transform: scale(1.1);
+        }
+        
+        .volume-control {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        /* WhatsApp Section */
+        .whatsapp-container {
+            background-color: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+        
+        .whatsapp-title {
+            color: #b03a5b;
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+            text-align: center;
+        }
+        
+        .whatsapp-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+        
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ffccd5;
+            border-radius: 10px;
+            font-size: 1rem;
+            resize: vertical;
+            min-height: 120px;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #b03a5b;
+        }
+        
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 0 auto;
+            transition: all 0.3s;
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #7a2c4a;
+            border-top: 1px solid #ffccd5;
+            margin-top: 20px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .carousel-item img {
+                height: 350px;
+            }
+            
+            .message-container, .music-container, .whatsapp-container, .carousel-container {
+                padding: 20px;
+            }
+            
+            .carousel-title, .message-title, .music-title, .whatsapp-title {
+                font-size: 1.8rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .carousel-item img {
+                height: 250px;
+            }
+            
+            .carousel-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+            
+            .music-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Selamat Ulang Tahun <span class="heart">♥</span> Bocill!</h1>
+            <p>Hari ini adalah hari yang spesial karena dunia mendapat anugerah terindah dengan kehadiranmu. Semoga setiap detik hari ini penuh dengan kebahagiaan dan cinta.</p>
+        </header>
+        
+        <!-- Photo Carousel -->
+        <section class="carousel-container">
+            <h2 class="carousel-title">Kecantikannya bocilku♥</h2>
+            <div class="carousel">
+                <div class="carousel-inner" id="carouselInner">
+                    <!-- Images will be added via JavaScript -->
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="carousel-indicators" id="indicators">
+                <!-- Indicators will be added via JavaScript -->
+            </div>
+        </section>
+        
+        <!-- Birthday Message -->
+        <section class="message-container">
+            <h2 class="message-title">Ucapan Istimewa untuk bocilku sayaang</h2>
+            <div class="message-content">
+                <p>Alam bocillkuu,</p>
+                <p>Selamat ulang tahun yang ke 17 alam, 17 mi toh umur ta’:).
+                </p>
+                <p>yeyyy selamat ulang tahun bocilku, semoga dengan bertambahnya umur ta’ bakalll terwujud semua
+                    kemauan ta’, cita² ta’ nanti, sama nanti tambah cantik, lucu, imuuttt, tambaahh apa yahh, intinyaa tambaaahh
+                    banyaaaakkk lagiiii.
+                </p>
+                <p>Kalau kenapa-kenapa ki bilangki nahh, jangan ki merasa sendiri
+                    ada jka selalu di dekat ta’ di samping ta’ dan selalu ada terus buat kita’.
+                    Kalau sedihki tanya ka nahh, jangan ki pendam apapun itu sendirian okeiii, tidak baik
+                    pendam-pendam jadi tanyaka okeiii bocill kalau ada apa-apa.
+                </p>
+                <p>Minta maafka kalau selama kita’ sama saya masih seringka buat marahki:(. maafka:(.
+                    Mauka selalu sama kita’, mau selama-lamanya sama kita’:(.
+                </p>
+                <p>Berharapka kita’ terakhir ku suka, kita’ terakhir ku panggil sayang
+                    kita’ terakhir yang buatka jatuh cinta.
+                </p>
+                <div class="signature">
+                    <p>I Love You<br><strong>Bocil Tengilmu</strong></p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Music Player -->
+        <section class="music-container">
+            <h2 class="music-title">Lagu Spesial untuk Hari Ini</h2>
+            <div class="music-player">
+                <div class="music-info">
+                    <h3 id="songTitle">Masa ini, masa nanti, dan masa indah lainya - Nuca</h3>
+                    <p id="songArtist">Lagu cinta untuk hari spesialmu</p>
+                    <div class="volume-control">
+                        <i class="fas fa-volume-up" style="color: #b03a5b;"></i>
+                        <input type="range" id="volumeControl" min="0" max="100" value="50">
+                    </div>
+                </div>
+                <div class="music-controls">
+                    <button class="music-btn" id="playBtn">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button class="music-btn" id="pauseBtn">
+                        <i class="fas fa-pause"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- WhatsApp Message -->
+        <section class="whatsapp-container">
+            <h2 class="whatsapp-title">Kirim Ucapanmu Langsung ke WhatsApp</h2>
+            <div class="whatsapp-form">
+                <div class="form-group">
+                    <label for="message">Kalau ada mau di bilang, ketik di bawah mi:</label>
+                    <textarea id="message"></textarea>
+                </div>
+                <button class="whatsapp-btn" id="whatsappBtn">
+                    <i class="fab fa-whatsapp"></i> Kirim via WhatsApp
+                </button>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+            <p>Dibuat dengan <span class="heart">♥</span> untuk pasangan tersayang | © 2023 Ucapan Ulang Tahun Romantis</p>
+        </footer>
+    </div>
+
+    <!-- Hidden audio element for background music -->
+    <audio id="backgroundMusic" loop>
+        <source src="Musik.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+<script>
+        // Data untuk carousel (gambar placeholder karena tidak ada gambar aktual)
+        const carouselData = [
+            {
+                src: "Foto 1.jpg",
+                alt: "",
+                caption: ""
+            }, 
+    {
+                src: "Foto 2.jpg",
+                alt: "",
+                caption: ""
+            },
+    {
+                src: "Foto 3.jpg",
+                alt: "",
+                caption: ""
+            },
+    {
+                src: "Foto 4.jpg",
+                alt: "",
+                caption: ""
+            },
+    {
+                src: "Foto 5.jpg",
+                alt: "",
+                caption: ""
+            },
+        ];
+
+        // Inisialisasi carousel
+        const carouselInner = document.getElementById('carouselInner');
+        const indicatorsContainer = document.getElementById('indicators');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        
+        let currentIndex = 0;
+        
+        // Fungsi untuk membuat carousel
+        function initCarousel() {
+            // Kosongkan carousel inner dan indicators
+            carouselInner.innerHTML = '';
+            indicatorsContainer.innerHTML = '';
+            
+            // Buat item carousel dan indicators
+            carouselData.forEach((item, index) => {
+                // Buat carousel item
+                const carouselItem = document.createElement('div');
+                carouselItem.className = 'carousel-item';
+                carouselItem.innerHTML = `
+                    <img src="${item.src}" alt="${item.alt}">
+                    <div class="carousel-caption">
+                        <p>${item.caption}</p>
+                    </div>
+                `;
+                carouselInner.appendChild(carouselItem);
+                
+                // Buat indicator
+                const indicator = document.createElement('div');
+                indicator.className = `indicator ${index === 0 ? 'active' : ''}`;
+                indicator.dataset.index = index;
+                indicator.addEventListener('click', () => goToSlide(index));
+                indicatorsContainer.appendChild(indicator);
+            });
+            
+            updateCarousel();
+        }
+        
+        // Fungsi untuk memperbarui carousel
+        function updateCarousel() {
+            carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+            
+            // Update indicators
+            document.querySelectorAll('.indicator').forEach((indicator, index) => {
+                if (index === currentIndex) {
+                    indicator.classList.add('active');
+                } else {
+                    indicator.classList.remove('active');
+                }
+            });
+        }
+        
+        // Fungsi untuk pergi ke slide tertentu
+        function goToSlide(index) {
+            currentIndex = index;
+            updateCarousel();
+        }
+        
+        // Fungsi untuk slide berikutnya
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % carouselData.length;
+            updateCarousel();
+        }
+        
+        // Fungsi untuk slide sebelumnya
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + carouselData.length) % carouselData.length;
+            updateCarousel();
+        }
+        
+        // Event listeners untuk tombol carousel
+        prevBtn.addEventListener('click', prevSlide);
+        nextBtn.addEventListener('click', nextSlide);
+        
+        // Auto slide carousel setiap 5 detik
+        let carouselInterval = setInterval(nextSlide, 5000);
+        
+        // Hentikan auto slide ketika hover di carousel
+        carouselInner.addEventListener('mouseenter', () => {
+            clearInterval(carouselInterval);
+        });
+        
+        carouselInner.addEventListener('mouseleave', () => {
+            carouselInterval = setInterval(nextSlide, 5000);
+        });
+        
+        // Inisialisasi carousel saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', initCarousel);
+        
+        // Musik Player
+        const backgroundMusic = document.getElementById('backgroundMusic');
+        const playBtn = document.getElementById('playBtn');
+        const pauseBtn = document.getElementById('pauseBtn');
+        const volumeControl = document.getElementById('volumeControl');
+        const songTitle = document.getElementById('songTitle');
+        const songArtist = document.getElementById('songArtist');
+        
+        // Set volume awal
+        backgroundMusic.volume = volumeControl.value / 100;
+        
+        // Event listener untuk tombol play
+        playBtn.addEventListener('click', () => {
+            backgroundMusic.play();
+            playBtn.style.backgroundColor = '#ffccd5';
+            pauseBtn.style.backgroundColor = '#ffb6c1';
+            
+            // Ubah teks lagu untuk efek interaktif
+            songTitle.textContent = "Masa ini, masa nanti, dan masa indah lainya - Nuca";
+            songArtist.textContent = "Sedang diputar...";
+        });
+        
+        // Event listener untuk tombol pause
+        pauseBtn.addEventListener('click', () => {
+            backgroundMusic.pause();
+            pauseBtn.style.backgroundColor = '#ffccd5';
+            playBtn.style.backgroundColor = '#ffb6c1';
+            
+            // Ubah teks lagu untuk efek interaktif
+            songTitle.textContent = "Masa ini, masa nanti, dan masa indah lainya - Nuca";
+            songArtist.textContent = "Dalam jeda...";
+        });
+        
+        // Event listener untuk kontrol volume
+        volumeControl.addEventListener('input', () => {
+            backgroundMusic.volume = volumeControl.value / 100;
+        });
+        
+        // WhatsApp Integration
+        const whatsappBtn = document.getElementById('whatsappBtn');
+        const messageTextarea = document.getElementById('message');
+        
+        // Nomor WhatsApp (ganti dengan nomor Anda)
+        const phoneNumber = "+6283134251354"; // Ganti dengan nomor WhatsApp Anda
+        
+        // Event listener untuk tombol WhatsApp
+        whatsappBtn.addEventListener('click', () => {
+            const message = encodeURIComponent(messageTextarea.value);
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+        });
+        
+        // Efek tambahan untuk halaman
+        document.addEventListener('DOMContentLoaded', () => {
+            // Efek konfeti sederhana
+            const createHeart = () => {
+                const heart = document.createElement('div');
+                heart.innerHTML = '♥';
+                heart.style.position = 'fixed';
+                heart.style.color = '#ff4d6d';
+                heart.style.fontSize = Math.random() * 20 + 10 + 'px';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.top = '-50px';
+                heart.style.opacity = '0.7';
+                heart.style.pointerEvents = 'none';
+                heart.style.zIndex = '9999';
+                document.body.appendChild(heart);
+                
+                // Animasi jatuh
+                const animation = heart.animate([
+                    { transform: 'translateY(0) rotate(0deg)', opacity: 0.7 },
+                    { transform: `translateY(${window.innerHeight + 50}px) rotate(${Math.random() * 360}deg)`, opacity: 0 }
+                ], {
+                    duration: Math.random() * 3000 + 2000,
+                    easing: 'cubic-bezier(0.215, 0.61, 0.355, 1)'
+                });
+                
+                // Hapus elemen setelah animasi selesai
+                animation.onfinish = () => heart.remove();
+            };
+            
+            // Buat beberapa hati saat halaman dimuat
+            for (let i = 0; i < 15; i++) {
+                setTimeout(createHeart, i * 300);
+            }
+            
+            // Buat hati secara berkala
+            setInterval(createHeart, 2000);
+            
+            // Putar musik otomatis dengan volume rendah (browser mungkin memblokir)
+            setTimeout(() => {
+                backgroundMusic.volume = 0.3;
+                backgroundMusic.play().catch(e => {
+                    console.log("Autoplay diblokir, pengguna harus mengklik tombol play");
+                });
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
